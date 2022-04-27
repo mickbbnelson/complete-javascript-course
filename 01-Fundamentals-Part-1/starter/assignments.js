@@ -52,3 +52,29 @@ const description = `${country} is in ${continent}, and its ${population} millio
 const description2 = country + " is in " + continent + ", and its " + population + " million people speak " + language
 // console.log(description2)
 
+// Assignment 1
+
+const mark1 = {weight: 78, height: 1.69}
+const john1 = {weight: 92, height: 1.95}
+
+const mark2 = {weight: 95, height: 1.88}
+const john2 = {weight: 85, height: 1.76}
+
+function BMIFinder(weight, height) {
+    return weight / height ** 2
+}
+
+const mark1BMI = BMIFinder(mark1.weight, mark1.height)
+const john1BMI = BMIFinder(john1.weight, john1.height)
+const mark2BMI = BMIFinder(mark2.weight, mark2.height)
+const john2BMI = BMIFinder(john2.weight, john2.height)
+
+// function markHigherBMI(markBMI, johnBMI){
+//     return markBMI > johnBMI ? true : false
+// }
+
+const higherBMI1 = mark1BMI > john1BMI
+const higherBMI2 = mark2BMI > john2BMI
+
+console.log(higherBMI1)
+console.log(higherBMI2)
