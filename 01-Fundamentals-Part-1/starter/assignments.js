@@ -89,5 +89,5 @@ function WhoIsHigher(mark, john) {
     }
 }
 
-console.log(WhoIsHigher(mark1BMI, john1BMI));
-console.log(WhoIsHigher(mark2BMI, john2BMI));
+// console.log(WhoIsHigher(mark1BMI, john1BMI));
+// console.log(WhoIsHigher(mark2BMI, john2BMI));
