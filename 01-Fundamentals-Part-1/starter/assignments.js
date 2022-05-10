@@ -76,5 +76,18 @@ const john2BMI = BMIFinder(john2.weight, john2.height)
 const higherBMI1 = mark1BMI > john1BMI
 const higherBMI2 = mark2BMI > john2BMI
 
-console.log(higherBMI1)
-console.log(higherBMI2)
+// console.log(higherBMI1)
+// console.log(higherBMI2)
+
+// Assignment 2
+
+function WhoIsHigher(mark, john) {
+    if (mark > john) {
+        return `Marks BMI (${mark}) is higher than Johns (${john})`
+    } else {
+        return `Johns BMI (${john}) is higher than Marks (${mark})`
+    }
+}
+
+console.log(WhoIsHigher(mark1BMI, john1BMI));
+console.log(WhoIsHigher(mark2BMI, john2BMI));
