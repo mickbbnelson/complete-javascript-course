@@ -91,3 +91,42 @@ function WhoIsHigher(mark, john) {
 
 // console.log(WhoIsHigher(mark1BMI, john1BMI));
 // console.log(WhoIsHigher(mark2BMI, john2BMI));
+
+// Assignment 3
+const dolphinsScore1 = [96, 108, 89]
+const koalasScore1 = [88, 91, 100]
+
+const dolphinsScore2 = [97, 112, 101]
+const koalasScore2 = [109, 95, 123]
+
+const dolphinsScore3 = [100, 100, 104]
+const koalasScore3 = [100, 100, 104]
+
+const dolphinsScore4 = [100, 100, 90]
+const koalasScore4 = [100, 100, 90]
+
+function findAverage(score) {
+    total = score[0] + score[1] + score[2] 
+    return total / 3
+}
+
+console.log(findAverage(dolphinsScore1))
+
+function findWinner(scores1, scores2){
+    const avg1 = findAverage(scores1);
+    const avg2 = findAverage(scores2);
+    if (avg1 > avg2 && avg1 > 100) {
+        return "Dolphins Win!"
+    } else if (avg2 > avg1 && avg2 > 100) {
+        return "Dolphins Lose the Superbowl! Thanks Finkle!"
+    } else if (avg2 === avg1 && avg2 > 100){
+        return "Its a Draw!"
+    } else {
+        return "Y'all are losers"
+    }
+}
+
+console.log(findWinner(dolphinsScore1, koalasScore1))
+console.log(findWinner(dolphinsScore2, koalasScore2))
+console.log(findWinner(dolphinsScore3, koalasScore3))
+console.log(findWinner(dolphinsScore4, koalasScore4))
